@@ -1,0 +1,25 @@
+h1 {
+    color: rgb(207, 34, 34);
+    background-color: rgb(61, 61, 128);
+    border: 1px solid rgb(245, 229, 229);
+    width: 600px;
+    height: 40px;
+ }
+
+ h2 {
+    color: #b81b35;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border: 2px dashed rgb(55, 0, 128);
+    border-bottom: 1px solid red;
+    width: 500px;
+    height: 35px;
+    }
+
+span {
+    background-color: yellow;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
