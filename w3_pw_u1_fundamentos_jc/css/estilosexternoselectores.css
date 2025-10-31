@@ -1,0 +1,36 @@
+/*2. Selector por clase*/
+
+.titulos {
+    color: rgb(129, 118, 118);
+    font-size: 30px;
+    background-color: blue;
+}
+
+/*3. Selector por ID*/
+#id_titulo {
+    color: black;
+    background-color: red;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*4. Selector por pseudo clase*/
+i:hover {
+    color: orange;
+    font-size: 30px;
+}
+
+input:focus {
+    border: 4px solid green;
+    background: rgb(211, 211, 211);
+}
+
+/* Selector por atributo*/ 
+[id] {
+    color: brown;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+img[alt="No2"] {
+    width: 80px;
+    height: 50px;
+}
