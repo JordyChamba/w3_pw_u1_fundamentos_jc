@@ -160,7 +160,7 @@ function fundamentosJS() {
     if(profesor.edad !== 26) {
         console.log('Es diferente de 26');
     }else {
-        console.log('Es 26');
+        console.log('Es igual a 26');
     }
 
     for(let clave in profesor) {
