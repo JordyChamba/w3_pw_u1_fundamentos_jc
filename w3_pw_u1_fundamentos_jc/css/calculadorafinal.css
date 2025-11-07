@@ -1,0 +1,13 @@
+#calculadora {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    border-radius: 15px;
+    grid-template-columns: 75px 75px 75px 75px;
+    grid-template-rows: 75px 75px 75px 75px;
+}
+
+#id_display {
+    grid-row: span 4;
+}

@@ -128,23 +128,23 @@ function fundamentosJS() {
     }
 
     /*<-- -- Bucles -- -->*/
-    for(let i =0; i <= 5; i++) {
+    for (let i = 0; i <= 5; i++) {
         console.log(i);
     }
 
     const frutas = ['Manzana', 'Sandia', 'Papaya', 'Naranja'];
-    for(let fruta of frutas) { // of para arreglos
+    for (let fruta of frutas) { // of para arreglos
         console.log(fruta);
     }
 
     /*<-- -- Manejo de objetos -- -->*/
     const profesor = {
-         nombre: 'Bryan',
-         apellido: 'Loya',
-         edad: 26,
-         ecuatoriano: true,
-         genero: 'M',
-         ciudad: 'Quito'
+        nombre: 'Bryan',
+        apellido: 'Loya',
+        edad: 26,
+        ecuatoriano: true,
+        genero: 'M',
+        ciudad: 'Quito'
     }
 
     console.log(profesor);
@@ -153,18 +153,125 @@ function fundamentosJS() {
     console.log(profesor);
 
     /*Comparadores*/
-    if(profesor.ciudad === 'Quito') {
+    if (profesor.ciudad === 'Quito') {
         console.log('Es quiteño');
     }
 
-    if(profesor.edad !== 26) {
+    if (profesor.edad !== 26) {
         console.log('Es diferente de 26');
-    }else {
+    } else {
         console.log('Es igual a 26');
     }
 
-    for(let clave in profesor) {
+    for (let clave in profesor) {
         console.log(clave);
         console.log(profesor[clave]);
     }
+
+    /*----------------------------------*/
+    const e1 = {
+        nombre: 'Bryan',
+        apellido: 'Loya',
+        edad: 26,
+        ecuatoriano: true,
+        genero: 'M',
+        ciudad: 'Quito'
+    }
+
+    const e2 = {
+        nombre: 'Bryan',
+        apellido: 'Loya',
+        edad: 26,
+        ecuatoriano: true,
+        genero: 'M',
+        ciudad: 'Quito'
+    }
+
+    const aregloEstudiantes = [e1, e2, {
+        nombre: 'Jordy',
+        apellido: 'Chamba',
+        edad: 23,
+        ecuatoriano: true,
+        genero: 'M',
+        ciudad: 'Quito'
+    }];
+
+    console.log(aregloEstudiantes[0]);
+    console.log(aregloEstudiantes[2]);
+
+    /*--------------------------------*/
+    /*Desestructuración*/
+
+    const ar1 = [1, 2, 3, 4, 5, 6, 7];
+    const [a, b, c, d, e] = ar1; //posicion de cada elemento del arreglo
+    console.log(a);
+    console.log(d);
+
+    const [Primero, , , , , , ultimo] = ar1;
+    console.log(Primero);
+    console.log(ultimo);
+
+    const [pos1, pos2] = [1, 2, 3, 4, 5, 6, 7];
+    imprime(ar1);
+
+    /*Objetos*/
+
+    const e3 = {
+        nombre: 'Bryan',
+        apellido: 'Loya',
+        edad: 26,
+        ecuatoriano: true,
+        genero: 'M',
+        ciudad: 'Quito'
+    }
+
+    /*const {nombre, ciudad} = e3; //los nombres deben coincidir con los del objeto
+    console.log(nombre); // hizo mal
+    console.log(ciudad);*/
+
+    const { nombre: n, ciudad: ciu } = {
+        nombre: 'Jordy',
+        apellido: 'Chamba',
+        edad: 23,
+        ecuatoriano: true,
+        genero: 'M',
+        ciudad: 'Quito'
+    };
+    console.log(n);
+    console.log(ciu);
+
+    const e4 = {
+        nombre: 'Bryan',
+        apellido: 'Loya',
+        edad: 26,
+        ecuatoriano: true,
+        genero: 'M',
+        ciudad: 'Quito',
+        direccion: {                   //atributos tipo objeto en JS
+            calle: 'Av. America',
+            barrio: 'La Gasca',
+            numeracion: "2343"
+        }
+    }
+
+    console.log(e4.direccion);
+    console.log(e4.direccion.calle);
+
+    const { edad: ed, direccion } = e4;
+    console.log(ed);
+    console.log(direccion);
+
+    const { calle } = direccion;
+    console.log(calle);
+
+    const { direccion: { barrio, calle: c1, numeracion } } = e4;
+    console.log(barrio);
+    console.log(c1);
+    console.log(numeracion);
+}
+
+function imprime([a, b, c]) {
+    console.log(a);
+    console.log(b);
+    console.log(c);
 }
