@@ -1,41 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/calculadorafinal.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="../js/calculadoraFinal.js"></script>
 </head>
-
 <body>
-    <header></header>
-    <nav></nav>
-    <section>
-        <div id="calculadora">
-            <label for="" id="id_display">0+1=1</label>
-            <button>C</button>
-            <button>DEL</button>
-            <button>%</button>
-            <button>/</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>*</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>-</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>+</button>
-            <button>0</button>
-            <button>.</button>
-            <button>=</button>
-
-        </div>
+    <div class="container">
+        <header>
+            <h1>Calculadora</h1>
+        </header>
+        <nav> Barra de navegación </nav>
+        <section>
+            <!-- <div id="calculadora"> -->
+            <div class="margen">
+                <div class="display" id="id_display"> </div>
+                <!-- <label for="" id="id_display">0+1=1</label>-->
+                <button id="id_C">C</button>
+                <button id="id_larr">&larr;</button>
+                <button id="id_porce" onclick="mostrarDisplay('%')">%</button>
+                <button id="id_div" onclick="mostrarDisplay('/')">/</button>
+                <button id="id_7" onclick="mostrarDisplay(7)">7</button>
+                <button id="id_8" onclick="mostrarDisplay(8)">8</button>
+                <button id="id_9" onclick="mostrarDisplay(9)">9</button>
+                <button id="id_multi" onclick="mostrarDisplay('*')">*</button>
+                <button id="id_4" onclick="mostrarDisplay(4)">4</button>
+                <button id="id_5" onclick="mostrarDisplay(5)">5</button>
+                <button id="id_6" onclick="mostrarDisplay(6)">6</button>
+                <button id="id_resta" onclick="mostrarDisplay('-')">-</button>
+                <button id="id_1" onclick="mostrarDisplay(1)">1</button>
+                <button id="id_2" onclick="mostrarDisplay(2)">2</button>
+                <button id="id_3" onclick="mostrarDisplay(3)">3</button>
+                <button id="id_suma" onclick="mostrarDisplay('+')">+</button>
+                <button id="id_0" onclick="mostrarDisplay(0)">0</button>
+                <button id="id_punto" onclick="mostrarDisplay('.')">.</button>
+                <button id="id_igual" onclick="mostrarDisplay('=')">=</button>
+            </div>
+    </div>
     </section>
-    <footer></footer>
+    <footer>
+        <h2>Jordy</h2>
+    </footer>
+    </div>
 </body>
-
 </html>
