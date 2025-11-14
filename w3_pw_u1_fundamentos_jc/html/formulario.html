@@ -2,33 +2,48 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/formulario.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario HTML</title>
+    <link rel="stylesheet" href="../css/formulario.css" />
     <script src="../js/formulario.js"></script>
-    <title>Document</title>
 </head>
 
 <body>
     <div class="container">
-        <header>Universidad Central del Ecuador</header>
+        <header>Universidad Central</header>
         <div class="formulario">
-            <nav>SIKARIO</nav>
+            <nav></nav>
             <section>
-                <form action="">
-                    <h2>Ingrese un nuevo estudiante</h2>
-                    <p type="Nombre: "><input type="text" placeholder="Ingrese su nombre"></p>
-                    <p type="Apellido: "><input type="text" placeholder="Ingrese su apellido"></p>
-                    <p type="Fecha de nacimiento: "><input type="date"></p>
-                    <p type="Email: "><input type="email" placeholder="Ingrese su correo electrónico"></p>
-                    <p type="Contraseña: "><input type="password" placeholder="Ingrese su contraseña"></p>
-                    <div class="centrar_boton">
-                        <button>Guardar</button>
+                <form action="#">
+                    <h2>Nuevo Estudiante:</h2>
+                    
+                    <div id="id_msg_error" class="msg_error"></div>
+                    <p type="Nombre:">
+                        <input id="id_nombre" type="text" />
+                        <span id="id_error_nombre" class="error_asterisco"></span>
+                    </p>
+
+                    <div id="id_msg_error" class="msg_error"></div>
+                    <p type="Apellido:">
+                        <input id="id_apellido" type="text" />
+                        <span id="id_error_apellido" class="error_asterisco"></span>
+                    </p>
+                    <p type="Fecha Nacimiento:"><input id="id_fecha" type="date" /></p>
+                    
+                    <div id="id_msg_error" class="msg_error"></div>
+                    <p type="Email:">
+                        <input id="id_email" type="email" />
+                        <span id="id_error_email" class="error_asterisco"></span>
+                    </p>
+                    <p type="Password:"><input id="id_password" type="password" /></p>
+                    <div class="centrar-boton">
+                        <button onclick="guardar()">Guardar</button>
                     </div>
                 </form>
             </section>
         </div>
-        <footer>Todos los derechos reservados ®</footer>
+        <footer>Todos Los Derechos Reservados</footer>
     </div>
 </body>
 

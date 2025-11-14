@@ -64,10 +64,26 @@ footer {
     justify-content: center;
 }
 
-header,h2 {
+header, h2 {
     text-align: center;
     font-family: 'Arial', sans-serif;
     font-weight: bold;
     font-size: 20px;
     color: blueviolet;
+}
+
+.msg_error {
+    background: #ffdddd;
+    border-left: 5px solid red;
+    padding: 10px;
+    display: none;
+    color: black;
+    font-weight: bold;
+}
+
+.error_asterisco {
+    color: red;
+    font-weight: bold;
+    display: none;
+    font-size: 16px;
 }
