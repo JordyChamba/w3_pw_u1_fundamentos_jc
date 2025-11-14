@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora DOM</title>
+    <script src="../js/jsexterno.js"></script>
+</head>
+
+<body>
+    <nav></nav>
+    <section>
+        <div id="id_div"></div>
+
+        <label id="id_label_1" for="id_n1">Número 1</label>
+        <input id="id_n1" type="number">
+
+        <label id="id_label_2" for="id_n2">Número 2</label>
+        <input id="id_n2" type="number">
+
+        <br><br>
+
+        <button onclick="cambiarColor('id_label_1','blue')">Cambiar Uno</button>
+        <button onclick="cambiarColor('id_label_2','red')">Cambiar Dos</button>
+        <button onclick="agregarElemento('id_div', construirH1())">Agregar</button>
+        <button onclick="eliminarElemento('id_label_1')">Eliminar</button>
+        <button onclick="ocultarElemento('id_label_2')">Ocultar</button>
+        <button onclick="mostrarElemento('id_label_2')">Mostrar</button>
+
+        <hr>
+        <button onclick="evaluarOperacion('sumar')">+</button>
+        <button onclick="evaluarOperacion('restar')">-</button>
+        <button onclick="evaluarOperacion('multiplicar')">*</button>
+        <button onclick="evaluarOperacion('dividir')">/</button>
+
+        <label id="id_resultado"></label>
+    </section>
+    <footer></footer>
+</body>
+
+</html>

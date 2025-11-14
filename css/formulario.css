@@ -1,0 +1,89 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-color: aquamarine;
+}
+
+p::before {
+    content: attr(type);
+    color: black;
+    font-weight: bold;
+    display: block;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+button {
+    background-color: rgb(3, 3, 70);
+    font-family: 'Arial', sans-serif;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+button:active {
+    background-color: darkblue;
+}
+
+input {
+    width: 220px;
+    border: none;
+    border-bottom: 2px solid black;
+    background: none;
+    color: black;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 3px solid rgb(0, 26, 255);
+}
+
+.formulario {
+    background-color: rgba(138, 245, 155, 0.336);
+    border-radius: 10px;
+    padding: 30px 40px;
+    box-shadow: 10px 15px black;
+}
+
+footer {
+    height: 100px;
+    margin-top: 50px;
+}
+
+.centrar_boton {
+    display: flex;
+    justify-content: center;
+}
+
+header, h2 {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: blueviolet;
+}
+
+.msg_error {
+    background: #ffdddd;
+    border-left: 5px solid red;
+    padding: 10px;
+    display: none;
+    color: black;
+    font-weight: bold;
+}
+
+.error_asterisco {
+    color: red;
+    font-weight: bold;
+    display: none;
+    font-size: 16px;
+}
