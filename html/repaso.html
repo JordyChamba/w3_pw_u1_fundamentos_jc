@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/repaso.css" />
+    <script src="../js/repaso.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="tarjeta">
+        <img src="/tarjeta.png"" alt=" No se cargo la imagen" width="460" height="345">
+
+
+        <div class="container">
+            <header></header>
+            <div class="formulario">
+                <nav></nav>
+                <section>
+
+                    <form action="#">
+
+                        <h1>Payment Details</h1>
+
+                        <p> Cardholder Name </p>
+                        <input type="text" id="id_name" required="true" placeholder="Nombre del propietario" />
+
+                        <p> Card Number </p>
+                        <input type="number" id="id_number" required="true" placeholder="Numero de la tarjeta" />
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <p for="exp-date">Exp Date</p>
+                                <input type="text" id="exp-date" placeholder="MM/YY" maxlength="5">
+                            </div>
+                            <div class="form-group">
+                                <p for="cvv">CVV</p>
+                                <input type="text" id="cvv" placeholder="000" maxlength="4">
+                            </div>
+                        </div>
+
+                        <div class="boton">
+                            <button onclick="guardar()">Confirm</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+            <footer></footer>
+        </div>
+    </div>
+</body>
+
+</html>

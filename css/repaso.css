@@ -1,0 +1,85 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 20px black;
+}
+
+.tarjeta {
+    display: flex;
+    justify-content: left;
+    background-color: white;
+    padding: 80px;
+}
+
+body {
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+
+}
+
+.formulario {
+    padding-left: 50px; 
+}
+
+h1 {
+    text-align: center;
+
+}
+
+p {
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input {
+    width: 250px;
+    border: none;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    margin-bottom: 10px;
+}
+
+#id_expDate {
+    grid-column: span 0;
+}
+
+button {
+    font-size: 20px;
+    margin-top: 15px;
+    width: 250px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding: 10px;
+    background-color: rgb(146, 72, 216);
+    color: white;
+    cursor: pointer;
+}
+
+img {
+    margin-top: 100px;
+}
+
+button:active {
+    background-color: gray;
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.form-group input {
+    width: 5cm;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
