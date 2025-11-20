@@ -20,7 +20,8 @@ body {
 }
 
 .formulario {
-    padding-left: 50px; 
+    padding-left: 50px;
+    background-color: gold;
 }
 
 h1 {
